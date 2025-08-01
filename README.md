@@ -1,69 +1,68 @@
-# React + TypeScript + Vite
+# 💬 DM Delay Button – Day 01 of 30 Days App Challenge
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📅 30 Days, 30 Apps Challenge
 
-Currently, two official plugins are available:
+As part of a self-growth and learning initiative, I’ve committed to building **one app every day for 30 days**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Each project focuses on solving a small real-world problem or practicing a specific concept in web development. The goal is to improve my consistency, problem-solving, and development skills — and share my journey publicly to inspire others.
 
-## Expanding the ESLint configuration
+This is **Day 01** of the challenge.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🔥 Project: DM Delay App
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+This is a simple messaging interface where your message is **delayed before sending**, giving you time to cancel it. Similar to the “Undo Send” feature in email/chat platforms.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+This was a task given by my instructor to explore timers, UI logic, and state management in React.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🧠 What I Learned
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- Using `setTimeout()` and `clearTimeout()` for message delay
+- Managing state with `useState` for message, delay, and timer
+- Conditional rendering for "Send" vs "Cancel" buttons
+- Using **Tailwind CSS** and **ShadCN** for clean UI
+- Organizing files into components and pages
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
+
+## 🛠 Tech Stack
+
+| Tool / Tech          | Used |
+|----------------------|------|
+| React + Vite         | ✅   |
+| TypeScript           | ✅   |
+| Tailwind CSS         | ✅   |
+| ShadCN UI            | ✅   |
+| Firebase             | ❌ (Coming Soon) |
+
+---
+
+## ✨ Features
+
+- Delay message before sending
+- Cancel button available during the timer
+- Clean and responsive UI
+- Potential for toast notifications and custom delay options
+
+---
+
+## 🔧 Future Improvements
+
+- Add a custom delay input (10s/30s/60s)
+- Replace "Message Sent" text with a toast notification
+- Add a message preview
+- Connect with Firebase for message saving
+
+---
+
+## 👨‍💻 Author
+
+**Zuhar Ahamed**  
+BSc (Hons) Computer Science Student  
+[LinkedIn](https://www.linkedin.com/in/your-link/)  
+[GitHub](https://github.com/Zheong10)
+
+---
+
+#30Days30Apps #React #TypeScript #TailwindCSS #ShadCN #BuildInPublic
